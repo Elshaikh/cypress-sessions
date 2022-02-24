@@ -19,8 +19,6 @@ describe('example to-do app', () => {
 
   it('displays two todo items by default', () => {
     cy.get('[placeholder="Street address"]').type('test')
-
-    cypress/integration/cypress-sessions/cypress-sessions.js
     
     })
   })
