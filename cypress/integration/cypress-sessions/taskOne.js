@@ -1,15 +1,12 @@
 /// <reference types="cypress" />
 
-// Welcome to Cypress!
-//
-// This spec file contains a variety of sample tests
-// for a todo list app that are designed to demonstrate
-// the power of writing tests in Cypress.
-//
-// To learn more about how Cypress works and
-// what makes it such an awesome testing tool,
-// please read our getting started guide:
-// https://on.cypress.io/introduction-to-cypress
+/********************
+ *
+ * To execute tests from this spec  =>
+ * Navigate to qa-frontend-cypress folder, open command line and type:
+ * Yarn cypress run cypress/integration/cypress-sessions/taskOne.js --headed
+ * Environment variable 'stage' can be one of this values: [dev, staging, production]; if stage is not specified tests will be run on staging
+ */
 
 describe('example to-do app', () => {
   beforeEach(() => {
