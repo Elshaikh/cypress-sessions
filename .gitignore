@@ -1,7 +1,7 @@
 .idea/
 .videos/
 .screenshots/
-/node_modules/
+node_modules/
 .DS_Store
 build/*
 cypress/snapshots/
