@@ -1,18 +1,22 @@
-/// <reference types="cypress" />
-
 /********************
  *
  * To execute tests from this spec  =>
  * Yarn cypress run cypress/integration/cypress-sessions/taskOne.js --headed
  */
-
+ // import formPO  "../../formPo"
+ import * as formCC from "../../fixtures/formCC.js";
+import formPO from "../../fixtures/formPo";
 describe('1st task Cypress', () => {
   beforeEach(() => {
-    cy.visit('http://10.72.4.107:5500/example/e.html')
-  })
+    cy.visit('https://qa-frontend-cypress.s3.eu-west-1.amazonaws.com/cypress-session2.html')
+  });
 
   it('fill the address', () => {
-    cy.get('[placeholder="Street address"]').type('al barsha 1 beside MOE')
-    
+
+      cy.get('[type="text"]').type('Test all the things', { force: true });
+
+
+
+      formCC.checkAllcheckBoxes()
     })
   })
