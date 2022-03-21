@@ -1,5 +1,5 @@
 {
-  "name": "y",
+  "name": "gmail-tester-cypress-example",
   "version": "y",
   "description": "y",
   "main": "y",
@@ -7,7 +7,8 @@
   "author": "y",
   "license": "y",
   "private": true,
-  "dependencies": {
-    "cypress": "^9.4.1"
+  "devDependencies": {
+    "cypress": "^9.4.1",
+    "gmail-tester": "^1.3.1"
   }
 }

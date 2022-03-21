@@ -15,8 +15,20 @@
 /**
  * @type {Cypress.PluginConfig}
  */
-// eslint-disable-next-line no-unused-vars
+const path = require("path");
+const gmail_tester = require("gmail-tester");
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+    on("task", {
+        log(message) {
+            console.log(message);
+            return null;
+        },
+        "gmail:check_inbox": async (args) => {
+            return await gmail_tester.check_inbox(
+                path.resolve(__dirname, "credentials.json"),
+                path.resolve(__dirname, "gmail_token.json"),
+                args.options
+            );
+        },
+    });
+};
