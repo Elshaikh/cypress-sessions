@@ -4,7 +4,7 @@
  * email : 'elshaikhtestemails@gmail.com' Password : 'Nokia2030'
  * yarn run cypress open -c baseUrl=https://next-staging.almosafer.com --specs cypress/integration/pwa/end2end/emails/signUpEmail.spec.js --headed
  */
-import {pullMail} from "../../fixtures/customHelpers/emailHelper.";
+import {pullMail} from "../fixtures/customHelpers/emailHelper";
 
 describe("New user registration E2E", async function () {
 
@@ -25,12 +25,5 @@ describe("New user registration E2E", async function () {
     });
     it("Register Form: Email is delievered", function () {
         pullMail(sender_Email,incoming_mailbox,'Welcome to Almosafer',)
-        // const body = emails[0].body.html;
-        // assert.isTrue(
-        //     body.indexOf(
-        //         "https://account-uplay.ubi.com/en-GB/action/change-password?genomeid="
-        //     ) >= 0,
-        //     "Found reset link!"
-        // );
     });
 });
