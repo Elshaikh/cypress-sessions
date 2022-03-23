@@ -7,8 +7,6 @@ build/*
 cypress/snapshots/
 cypress/screenshots/
 cypress/videos/
-cypress/plugins/credentials.json
-cypress/plugins/gmail_token.json
 
 cypress/reports/
 cypress/results/

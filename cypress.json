@@ -1,1 +1,7 @@
-{}
+{
+  "baseUrl": "https://next-staging.almosafer.com",
+  "retries": {
+    "runMode": 2,
+    "openMode": 0
+  }
+}

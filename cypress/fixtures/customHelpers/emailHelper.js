@@ -21,6 +21,18 @@ export function pullMail(fromEmail, to, subject) {
 
         const emailBody = emails[0].body.html; // newest email
         console.log(emailBody)
+        assert.isTrue(
+            emailBody.indexOf(
+                "Please verify your account"
+            ) >= 0,
+            "I Found! Please verify your account"
+        )
+        assert.isTrue(
+            emailBody.indexOf(
+                "Confirm email"
+            ) >= 0,
+            "I Found Confirm email"
+        );
 
     });
 }

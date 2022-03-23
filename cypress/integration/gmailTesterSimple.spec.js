@@ -7,13 +7,11 @@
 import {pullMail} from "../fixtures/customHelpers/emailHelper";
 
 describe("New user registration E2E", async function () {
-
-    let url = (Cypress.config().baseUrl);
     let test_id = new Date().getMilliseconds();
     let incoming_mailbox = `elshaikhtestEmails+${test_id}@gmail.com`;
     let sender_Email = `test-noreply@almosafer.com`;
     before(() => {
-        cy.visit(url + '/register');
+        cy.visit('/register');
     });
     it('should Visit & create new account', function () {
         cy.get('[name=email]').type(incoming_mailbox);
